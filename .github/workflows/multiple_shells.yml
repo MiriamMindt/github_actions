@@ -5,6 +5,7 @@ on:
       - "main"
   pull_request:
     types: [closed, assigned, opened, reopened]
+  workflow_dispatch:  # Add this line to enable manual triggering
 jobs:
   run-shell-command:
     runs-on: ubuntu-latest
